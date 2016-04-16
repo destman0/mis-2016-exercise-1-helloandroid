@@ -39,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
         et_inputHTTP = (EditText)findViewById(R.id.et_inputHTTP);
         tv_outputContent = (TextView) findViewById(R.id.tv_outputContent);
         btn_getHTTP = (Button) findViewById(R.id.btn_getHTTP);
+        
+        btn_getHTTP.setFocusable(true);
+        btn_getHTTP.setFocusableInTouchMode(true);
+        btn_getHTTP.requestFocus();
+
         btn_getHTTP.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View v){
