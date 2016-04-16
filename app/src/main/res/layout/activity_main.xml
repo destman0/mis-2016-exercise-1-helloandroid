@@ -14,13 +14,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/et_inputHTTP"
         android:layout_alignParentTop="true"
-        android:hint="Please enter a URL"
+        android:text="http://www.markeisenberg.org/UXMasters/desperados.html"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Retrieve Data"
+        android:text="Connect"
         android:id="@+id/btn_getHTTP"
         android:layout_marginTop="26dp"
         android:layout_below="@+id/et_inputHTTP"
