@@ -13,6 +13,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -102,6 +103,10 @@ public class MainActivity extends AppCompatActivity {
             // Starts the query
             connect.connect();
             int response = connect.getResponseCode();
+
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+
 
             switch (connect.getResponseCode()) {
                 case HttpURLConnection.HTTP_OK:
