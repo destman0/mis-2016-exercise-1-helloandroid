@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:layout_alignParentTop="true"
+        android:hint="Please enter a URL"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -24,4 +25,14 @@
         android:layout_marginTop="29dp"
         android:layout_below="@+id/editText"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Text output"
+        android:id="@+id/outputHTTP"
+        android:layout_below="@+id/getHTTP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
 </RelativeLayout>
