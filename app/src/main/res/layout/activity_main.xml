@@ -26,13 +26,19 @@
         android:layout_below="@+id/et_inputHTTP"
         android:layout_centerHorizontal="true" />
 
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_getHTTP"
+        android:layout_marginTop="30dp"
+        android:fillViewport="true">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Text output"
         android:id="@+id/tv_outputContent"
-        android:layout_marginTop="55dp"
-        android:layout_below="@+id/btn_getHTTP"
         android:layout_centerHorizontal="true" />
+    </ScrollView>
 </RelativeLayout>

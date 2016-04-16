@@ -97,7 +97,24 @@ public class MainActivity extends AppCompatActivity {
             // Starts the query
             connect.connect();
             int response = connect.getResponseCode();
-            Log.d(DEBUG_TAG, "The response is: " + response);
+
+            switch (connect.getResponseCode()) {
+                case HttpURLConnection.HTTP_OK:
+                    Log.d(DEBUG_TAG, " **OK**");
+                    break; // fine, go on
+                case HttpURLConnection.HTTP_GATEWAY_TIMEOUT:
+                    Log.d(DEBUG_TAG, " **gateway timeout**");
+                    break;// retry
+                case HttpURLConnection.HTTP_UNAVAILABLE:
+                    System.out.println(DEBUG_TAG + "**unavailable**");
+                    break;// retry, server is unstable
+                default:
+                    Log.d(DEBUG_TAG, " **unknown response code**.");
+                    break; // abort
+            }
+
+
+            //Log.d(DEBUG_TAG, "The response is: " + response);
             is = connect.getInputStream();
 
             // Convert the InputStream into a string
