@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.webkit.WebView;
@@ -87,7 +88,13 @@ public class MainActivity extends AppCompatActivity {
         if (netInfo != null && netInfo.isConnected()) {
             new ContentRetrieval().execute(url);
             //tv_outputContent.setText("Connected to the network");
-            webDisplay.loadUrl(url);
+            if (Patterns.WEB_URL.matcher(url).matches() == true){
+                webDisplay.loadUrl(url);
+            }
+            else {
+                toastText = "The URL is not valid. Please try again";
+                showToast();
+            }
         } else {
             //tv_outputContent.setText("No network connection available.");
 
