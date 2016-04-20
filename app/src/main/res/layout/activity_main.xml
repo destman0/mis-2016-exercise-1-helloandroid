@@ -28,11 +28,11 @@
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="150dp"
         android:layout_below="@+id/btn_getHTTP"
         android:layout_marginTop="30dp"
         android:fillViewport="true"
-        android:visibility="gone">
+        android:id="@+id/sv_scroll">
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,12 +45,12 @@
 
     <WebView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="150dp"
         android:id="@+id/wv_WebContent"
-        android:layout_below="@+id/btn_getHTTP"
+        android:layout_below="@+id/sv_scroll"
         android:layout_marginTop="30dp"
-        android:fillViewport="true">
-
+        android:fillViewport="true"
+        android:layout_centerHorizontal="true" >
 
     </WebView>
 </RelativeLayout>

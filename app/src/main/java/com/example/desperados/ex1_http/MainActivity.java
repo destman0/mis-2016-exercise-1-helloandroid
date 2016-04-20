@@ -30,6 +30,10 @@ import java.net.URL;
 // This code based on the code found here:
 // http://developer.android.com/training/basics/network-ops/connecting.html
 
+//Names: Pavel Karpashevich, Mark Eisenberg
+//Matriculation Numbers: 115154, 116453
+//MIS SS 2016
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String DEBUG_TAG = "HttpExample";
@@ -50,10 +54,6 @@ public class MainActivity extends AppCompatActivity {
         btn_getHTTP = (Button) findViewById(R.id.btn_getHTTP);
         webDisplay = (WebView) findViewById(R.id.wv_WebContent);
 
-        // Prevents the keyboard from opening automatically on app start
-        btn_getHTTP.setFocusable(true);
-        btn_getHTTP.setFocusableInTouchMode(true);
-        btn_getHTTP.requestFocus();
 
         btn_getHTTP.setOnClickListener(
                 new Button.OnClickListener(){
