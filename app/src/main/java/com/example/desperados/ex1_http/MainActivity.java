@@ -124,8 +124,7 @@ public class MainActivity extends AppCompatActivity {
     private String AccessUrl(String address) throws IOException {
         InputStream webContent = null;
 
-        // Only display the first 500 characters of the retrieved
-        // web page content.
+        // Setting the limit to 500 characters to display
         int charsToDisplay = 500;
 
         try {
