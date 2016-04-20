@@ -30,8 +30,7 @@ import java.net.URL;
 // This code based on the code found here:
 // http://developer.android.com/training/basics/network-ops/connecting.html
 
-//Names: Pavel Karpashevich, Mark Eisenberg
-//Matriculation Numbers: 115154, 116453
+//Name and Matriculation number: Pavel Karpashevich - 115154, Mark Eisenberg - 116453
 //MIS SS 2016
 
 public class MainActivity extends AppCompatActivity {

@@ -29,6 +29,7 @@
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:background="@drawable/border"
         android:layout_below="@+id/btn_getHTTP"
         android:layout_marginTop="30dp"
         android:fillViewport="true"
@@ -46,6 +47,7 @@
     <WebView
         android:layout_width="fill_parent"
         android:layout_height="150dp"
+        android:background="@drawable/border"
         android:id="@+id/wv_WebContent"
         android:layout_below="@+id/sv_scroll"
         android:layout_marginTop="30dp"
